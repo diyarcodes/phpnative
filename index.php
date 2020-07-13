@@ -37,7 +37,7 @@ $mahasiswa = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
                 <td><?= $i++; ?></td>
                 <td>
                     <a href="">Ubah</a> |
-                    <a href="">Hapus</a>
+                    <a href="hapusDataMahasiswa.php?id=<?= $d['id']; ?>">Hapus</a>
                 </td>
                 <td><img src="" alt=""></td>
                 <td><?= $d['nrp']; ?></td>
