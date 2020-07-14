@@ -14,3 +14,11 @@ function tambahDataMahasiswa($data)
     $query = mysqli_query($koneksi, "INSERT INTO mahasiswa VALUES('','$nrp','$nama','$email','$jurusan', '$gambar')");
     return mysqli_affected_rows($koneksi);
 }
+
+function hapusDataMahasiswa($id)
+{
+    global $koneksi;
+
+    mysqli_query($koneksi, "DELETE FROM mahasiswa WHERE id='$id'");
+    return mysqli_affected_rows($koneksi);
+}
