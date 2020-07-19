@@ -36,7 +36,7 @@ $mahasiswa = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
             <tr>
                 <td><?= $i++; ?></td>
                 <td>
-                    <a href="ubahDataMahasiswa.php?id=<?= $d['id']; ?>" onclick="return confirm('Yakin'); ">Ubah</a> |
+                    <a href="ubahDataMahasiswa.php?id=<?= $d['id']; ?>">Ubah</a> |
                     <a href="hapusDataMahasiswa.php?id=<?= $d['id']; ?>" onclick="return confirm('Yakin?');">Hapus</a>
                 </td>
                 <td><img src="" alt=""></td>
